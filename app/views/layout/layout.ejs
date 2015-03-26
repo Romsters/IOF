@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= blocks.title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<div class="app">
+    <div class="app-header">
+
+    </div>
+    <div class="app-container">
+        <div class="left-side-panel">
+            <%- partial('../partials/left-side-panel') %>
+        </div>
+        <div class="app-content">
+            <%- body %>
+        </div>
+        <div class="right-side-panel">
+            <%- partial('../partials/right-side-panel') %>
+        </div>
+    </div>
+</div>
+</body>
+</html>

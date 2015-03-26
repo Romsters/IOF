@@ -1,0 +1,38 @@
+html, body {
+  margin:0;
+  padding:0;
+  font: 14px sans-serif;
+}
+
+.app-header{
+    height:200px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-bottom:1px solid #dcdbdb;
+}
+
+.app-container{
+    display:table;
+    width:100%;
+    table-layout: fixed;
+}
+
+.left-side-panel, .right-side-panel, .app-content{
+    display:table-cell;
+    padding:20px;
+}
+
+.left-side-panel, .right-side-panel{
+    background: #f8f8f8;
+    width:200px;
+}
+
+.left-side-panel{
+    font-size:20px;
+}
+
+.app-content{
+    border-left:1px solid #dcdbdb;
+    border-right:1px solid #dcdbdb;
+}
