@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <link rel='stylesheet' href="/stylesheets/adminContent.css"/>
+    <script type="text/javascript" src="/javascripts/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="/javascripts/admin-students.js"></script>
+</head>
+<body>
+    <div class="app">
+       <h1 class="admin-header">
+           <div class="admin-header-text">
+               Список учасників ІІ етапу Всеукраїнської студентської олімпіади
+               з дисципліни «Страхова справа» в Житомирському державному технологічному університеті
+               09-11 квітня 2015 року:
+           </div>
+       </h1>
+       <ol class="list-students">
+           <% students.forEach(function(student){ %>
+           <li class="list-students-item">
+               <div class="list-student-item-container">
+                   <span class="student-name">
+                        <%= student %>
+                   </span>
+                   <span class="remove-student-btn-wrapper">
+                        <button class="remove-student-btn">Видалити</button>
+                   </span>
+               </div>
+           </li>
+           <% }) %>
+       </ol>
+       <div class="create-student-form-wrapper">
+           <form class="create-student-form" name="createStudent" action="/admin/createStudent" method="post">
+            <span class="create-student-form-header">
+                Введіть ім'я нового учасника:
+            </span>
+            <span class="create-student-form-input-wrapper">
+                <input class="student" type="text" name="student" required placeholder="Ім'я студента"/>
+            </span>
+            <span class="create-student-form-input-wrapper">
+                <button class="submit" type="submit">Додати</button>
+            </span>
+           </form>
+       </div>
+    </div>
+</body>
+</html>

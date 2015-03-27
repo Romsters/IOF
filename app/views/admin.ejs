@@ -2,11 +2,24 @@
 <html>
 <head>
     <title>Admin</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href="/stylesheets/admin.css"/>
 </head>
 <body>
-<div class="app">
-    Welcome Admin!
-</div>
+    <div class="app">
+        <form class="admin-form" name="admin" action="/admin" method="post">
+            <span class="admin-form-header">
+                Введіть логін та пароль:
+            </span>
+            <span class="admin-form-input-wrapper">
+                <input class="login" type="text" name="login" required placeholder="Логін"/>
+            </span>
+            <span class="admin-form-input-wrapper">
+                <input class="password" type="password" name="password" required placeholder="Пароль"/>
+            </span>
+            <span class="admin-form-input-wrapper">
+                <button class="submit" type="submit">Увійти</button>
+            </span>
+        </form>
+    </div>
 </body>
 </html>

@@ -4,35 +4,36 @@ html, body {
   font: 14px sans-serif;
 }
 
-.app-header{
-    height:200px;
-    font-size: 30px;
-    text-align: center;
-    background-color: #f0f0f0;
-    border-bottom:1px solid #dcdbdb;
-}
-
-.app-container{
-    display:table;
-    width:100%;
-    table-layout: fixed;
-}
-
-.left-side-panel, .right-side-panel, .app-content{
-    display:table-cell;
-    padding:20px;
-}
-
-.left-side-panel, .right-side-panel{
-    background: #f8f8f8;
-    width:200px;
-}
-
-.left-side-panel{
+.admin-form .admin-form-header{
+    display:block;
     font-size:20px;
+    text-align: center;
+    margin-top:100px;
 }
 
-.app-content{
-    border-left:1px solid #dcdbdb;
-    border-right:1px solid #dcdbdb;
+.admin-form-input-wrapper{
+    display:block;
+    text-align: center;
+    margin:30px;
+}
+
+.admin-form-input-wrapper .password,
+.admin-form-input-wrapper .login,
+.admin-form-input-wrapper .submit{
+    font-size:20px;
+    padding:10px;
+    border:3px solid #ededed;
+    border-radius: 10px;
+    outline: none;
+}
+
+.admin-form-input-wrapper .password:focus,
+.admin-form-input-wrapper .login:focus,
+.admin-form-input-wrapper .submit:focus{
+    border:3px solid #dcdcdc;
+}
+
+.admin-form-input-wrapper .submit:hover{
+    background: #ededed;
+    cursor:pointer;
 }

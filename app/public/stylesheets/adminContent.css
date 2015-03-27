@@ -1,0 +1,117 @@
+html, body {
+  margin:0;
+  padding:0;
+  font: 14px sans-serif;
+  min-width: 1000px;
+}
+
+.admin-header{
+    height:100px;
+    background: #ededed;
+    font-size:25px;
+    text-align: center;
+    padding:20px 50px 10px 50px;
+    margin:0;
+    border-bottom:2px solid #cbcbcb;
+    font-weight: normal;
+}
+
+.admin-header-text{
+    padding:10px;
+    border-radius: 10px;
+    background: #f6f6f6;
+    border:1px solid #cdcdcd;
+}
+
+.list-students{
+    padding:0;
+    margin:0;
+    width:500px;
+    display:inline-block;
+    background: #ededed;
+    border-right:2px solid #cbcbcb;
+    padding:20px;
+    padding-left:60px;
+    font-size:16px;
+}
+
+.list-students-item{
+    margin:15px 0;
+    background: white;
+    color: #121212;
+    padding:10px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #454545;
+}
+
+.student-name{
+    display:inline-block;
+    width:360px;
+}
+
+.remove-student-btn{
+    border-radius: 5px;
+    padding:3px 8px;
+    font-size:16px;
+    border:1px solid #aa3939;
+    background: #e1c2c2;
+    transition: 0.5s background-color, color, border;
+    cursor:pointer;
+}
+
+.remove-student-btn:hover{
+    color:white;
+    background: #6a1818;
+    border:1px solid #260000;
+}
+
+.create-student-form-wrapper{
+    display:inline-block;
+    vertical-align: top;
+    position:fixed;
+    top: 165px;
+    left: 600px;
+}
+
+.create-student-form{
+    background: #ededed;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #cbcbcb;
+    box-shadow: 1px 1px 3px 1px #454545;
+}
+
+.create-student-form-header{
+    font-size:25px;
+    display: block;
+}
+
+.create-student-form-input-wrapper{
+    padding:10px;
+    display:block;
+}
+
+.create-student-form-input-wrapper .student, .create-student-form-input-wrapper .submit{
+    padding:10px;
+    font-size:16px;
+    width:290px;
+    border-radius: 5px;
+    border:1px solid #bcbcbc;
+    outline: none;
+}
+
+.create-student-form-input-wrapper .student:focus{
+    border:1px solid #19469D;
+}
+
+.create-student-form-input-wrapper .submit{
+    width:310px;
+    transition: 0.5s background-color, color;
+    cursor:pointer;
+    background: #f6f6f6;
+}
+
+.create-student-form-input-wrapper .submit:hover{
+    background: #ababab;
+    color:white;
+}

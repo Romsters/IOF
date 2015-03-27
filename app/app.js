@@ -2,6 +2,7 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var bodyParser = require('body-parser');
+var fs = require('fs');
 var app = express();
 // view engine setup
 app.engine('ejs', require('ejs-locals'));
@@ -16,7 +17,7 @@ app.use(express.cookieParser());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-http.createServer(app).listen(8080, function(){
+http.createServer(app).listen(process.env.port || 8080, function(){
     console.log('Server listening on ' + 8080);
 });
 
@@ -36,10 +37,37 @@ app.get('/students', function(req, resp, next){
     resp.render('students');
 });
 
-app.use(function(req, res, next){
-    if(req.url != '/'){
-        next(new Error());
+app.post('/admin', function(req, resp, next){
+    if(req.body.login == 'ztu_admin_iof' && req.body.password == 'ztuiofadminsecret'){
+        fs.readFile('app/students.json', 'utf-8', function (err, fileContents) {
+            if (err) next(err);
+            resp.render('admin-content', {
+                students: JSON.parse(fileContents)
+            });
+        });
+        return;
     }
+    next(new Error());
+});
+
+app.post('/admin/createStudent', function(req, resp, next){
+    var student = req.body.student;
+    if(student.length < 10){
+        resp.end('Данные не корректные');
+        return;
+    }
+    fs.readFile('app/students.json', 'utf-8', function (err, fileContents) {
+        if (err) next(err);
+        var studentCollection = JSON.parse(fileContents);
+        studentCollection[studentCollection.length] = student;
+        resp.render('admin-content', {
+            students: studentCollection
+        });
+    });
+});
+
+app.use(function(req, res, next){
+    next(new Error());
 });
 
 app.use(function(err, req, res, next){
