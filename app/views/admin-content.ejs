@@ -22,15 +22,13 @@
                    <span class="student-name">
                         <%= student %>
                    </span>
-                   <span class="remove-student-btn-wrapper">
-                        <button class="remove-student-btn">Видалити</button>
-                   </span>
+                   <button class="remove-student-btn" type="button">Видалити</button>
                </div>
            </li>
            <% }) %>
        </ol>
        <div class="create-student-form-wrapper">
-           <form class="create-student-form" name="createStudent" action="/admin/createStudent" method="post">
+           <form class="create-student-form" name="createStudent">
             <span class="create-student-form-header">
                 Введіть ім'я нового учасника:
             </span>
@@ -38,7 +36,7 @@
                 <input class="student" type="text" name="student" required placeholder="Ім'я студента"/>
             </span>
             <span class="create-student-form-input-wrapper">
-                <button class="submit" type="submit">Додати</button>
+                <button class="submit" type="button">Додати</button>
             </span>
            </form>
        </div>
