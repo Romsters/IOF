@@ -6,7 +6,7 @@ html, body {
 }
 
 .admin-header{
-    height:100px;
+    min-height:100px;
     background: #ededed;
     font-size:25px;
     text-align: center;

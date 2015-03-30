@@ -26,10 +26,26 @@
       <file leaf-file-name="admin-content.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/admin-content.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="683" selection-end="683" vertical-scroll-proportion="-3.2692308" vertical-offset="204" max-vertical-offset="850">
-              <folding>
-                <marker date="1427663063678" expanded="true" signature="732:1090" placeholder="{...}" />
-              </folding>
+            <state line="16" column="12" selection-start="331" selection-end="649" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="850">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="17" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.5483871" vertical-offset="459" max-vertical-offset="1802">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timer.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/public/javascripts/timer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="21" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,11 +59,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.ejs" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layout/layout.ejs">
+      <file leaf-file-name="clock.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/public/javascripts/clock.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="28" selection-start="320" selection-end="320" vertical-scroll-proportion="0.38724375" vertical-offset="0" max-vertical-offset="629">
-              <folding />
+            <state line="8" column="25" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="816">
+              <folding>
+                <marker date="1427742306362" expanded="true" signature="238:1271" placeholder="{...}" />
+                <marker date="1427742306362" expanded="true" signature="415:1256" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,7 +83,7 @@
       <file leaf-file-name="admin-students.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/public/javascripts/admin-students.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="19" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+            <state line="9" column="29" selection-start="379" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
@@ -73,7 +92,7 @@
       <file leaf-file-name="adminContent.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/public/stylesheets/adminContent.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="1" selection-start="422" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="895" max-vertical-offset="2091">
+            <state line="8" column="21" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2091">
               <folding />
             </state>
           </provider>
@@ -97,24 +116,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/node_modules/body-parser/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="0" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.0" vertical-offset="1432" max-vertical-offset="1802">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/node_modules/body-parser/node_modules/raw-body/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="0" selection-start="3366" selection-end="3366" vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="2669">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -127,7 +128,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/config/config.json" />
         <option value="$PROJECT_DIR$/app/views/error.ejs" />
-        <option value="$PROJECT_DIR$/app/views/clock.ejs" />
         <option value="$PROJECT_DIR$/app/views/index.ejs" />
         <option value="$PROJECT_DIR$/app/views/student-list.ejs" />
         <option value="$PROJECT_DIR$/app/package.json" />
@@ -137,16 +137,19 @@
         <option value="$PROJECT_DIR$/app/views/admin.ejs" />
         <option value="$PROJECT_DIR$/app/public/stylesheets/admin.css" />
         <option value="$PROJECT_DIR$/app/public/stylesheets/admin-content.css" />
-        <option value="$PROJECT_DIR$/app/public/stylesheets/adminContent.css" />
         <option value="$PROJECT_DIR$/app/public/javascripts/admin-students.js" />
         <option value="$PROJECT_DIR$/app/views/admin-content.ejs" />
-        <option value="$PROJECT_DIR$/app/views/students.ejs" />
         <option value="$PROJECT_DIR$/app/views/partials/right-side-panel.ejs" />
+        <option value="$PROJECT_DIR$/app/libs/sort.js" />
+        <option value="$PROJECT_DIR$/app/public/javascripts/clock.js" />
+        <option value="$PROJECT_DIR$/app/public/javascripts/timer.js" />
+        <option value="$PROJECT_DIR$/app/views/clock.ejs" />
+        <option value="$PROJECT_DIR$/app/public/stylesheets/adminContent.css" />
+        <option value="$PROJECT_DIR$/app/views/students.ejs" />
         <option value="$PROJECT_DIR$/app/views/layout/layout.ejs" />
         <option value="$PROJECT_DIR$/app/views/partials/left-side-panel.ejs" />
         <option value="$PROJECT_DIR$/app/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/app/app.js" />
-        <option value="$PROJECT_DIR$/app/libs/sort.js" />
       </list>
     </option>
   </component>
@@ -458,7 +461,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1308" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1308" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -497,20 +500,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/error.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="7" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
@@ -527,7 +516,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/clock.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="170" />
+        <state line="3" column="16" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="170">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/students.ejs">
@@ -646,11 +637,6 @@
         <state line="84" column="38" selection-start="3045" selection-end="3045" vertical-scroll-proportion="0.0" vertical-offset="968" max-vertical-offset="4811" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/clock.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="170" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="21" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="374">
@@ -766,60 +752,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin-content.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="683" selection-end="683" vertical-scroll-proportion="-3.2692308" vertical-offset="204" max-vertical-offset="850">
-          <folding>
-            <marker date="1427663063678" expanded="true" signature="732:1090" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/students.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="34" selection-start="362" selection-end="362" vertical-scroll-proportion="0.309795" vertical-offset="0" max-vertical-offset="439">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/right-side-panel.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="6" selection-start="268" selection-end="268" vertical-scroll-proportion="0.19362187" vertical-offset="0" max-vertical-offset="439">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/stylesheets/adminContent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="1" selection-start="422" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="895" max-vertical-offset="2091">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/left-side-panel.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="766" selection-end="766" vertical-scroll-proportion="0.61959" vertical-offset="0" max-vertical-offset="439">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="20" selection-start="3297" selection-end="3297" vertical-scroll-proportion="0.8119469" vertical-offset="1690" max-vertical-offset="3672">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="19" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1768">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/javascripts/admin-students.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
           <folding />
         </state>
       </provider>
@@ -831,9 +766,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/javascripts/clock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="816">
+          <folding>
+            <marker date="1427742306362" expanded="true" signature="238:1271" placeholder="{...}" />
+            <marker date="1427742306362" expanded="true" signature="415:1256" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/javascripts/timer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/javascripts/admin-students.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="29" selection-start="379" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/clock.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="280" selection-end="280" vertical-scroll-proportion="0.309795" vertical-offset="0" max-vertical-offset="439">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/stylesheets/adminContent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/students.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="38" selection-start="718" selection-end="729" vertical-scroll-proportion="0.65831435" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin-content.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="12" selection-start="331" selection-end="649" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout/layout.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="320" selection-end="320" vertical-scroll-proportion="0.38724375" vertical-offset="0" max-vertical-offset="629">
+        <state line="33" column="47" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.65831435" vertical-offset="272" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/left-side-panel.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="46" selection-start="310" selection-end="328" vertical-scroll-proportion="0.19362187" vertical-offset="0" max-vertical-offset="439">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="1" selection-start="3500" selection-end="3500" vertical-scroll-proportion="0.4090909" vertical-offset="3509" max-vertical-offset="5661">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="17" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.5483871" vertical-offset="459" max-vertical-offset="1802">
           <folding />
         </state>
       </provider>

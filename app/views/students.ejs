@@ -1,6 +1,13 @@
 <% layout('layout/layout') %>
 <% block('title', 'Список студентов') %>
 <div class="app-content-student-list">
+    <h1 class="admin-header">
+        <div class="admin-header-text">
+            Список учасників ІІ етапу Всеукраїнської студентської олімпіади
+            з дисципліни «Страхова справа» в Житомирському державному технологічному університеті
+            09-11 квітня 2015 року:
+        </div>
+    </h1>
     <ol class="list-students">
         <% students.forEach(function(student){ %>
         <li class="list-students-item">
@@ -8,8 +15,15 @@
                <span class="student-name">
                     <%= student %>
                </span>
+               <img class="student-img" src="/images/student.png">
             </div>
         </li>
         <% }) %>
     </ol>
+    <div class="student-not-found">
+        <span class="student-not-found-text">
+            Не знайшли себе у списку? Пишіть на
+        </span>
+        <span class="student-not-found-email"> finance_0412@ukr.net</span>
+    </div>
 </div>

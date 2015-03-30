@@ -38,16 +38,10 @@ html
 
 body
 {
+    min-width:1000px;
     min-height: 100%;
     padding: 20px;
-    background: #09649f; /* Old browsers */
-    background: -moz-linear-gradient(top, #09649f 0%, #ffffff 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#09649f), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #09649f 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #09649f 0%,#ffffff 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #09649f 0%,#ffffff 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #09649f 0%,#ffffff 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09649f', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(to bottom, #2da046 0%,#ffffff 200px,#ffffff 80%,#2da046 100%);
 }
 p
 {
@@ -56,36 +50,68 @@ p
 
 .app
 {
-    border: 1px solid #638BBC;
     border-radius: 50px;
     padding: 10px;
-    background: #c5def3; /* Old browsers */
-    background: -moz-linear-gradient(top, #c5def3 0%, #ffffff 200px, #ffffff 80%, #c5def3 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c5def3), color-stop(200px,#ffffff), color-stop(80%,#ffffff), color-stop(100%,#c5def3)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #c5def3 0%,#ffffff 200px,#ffffff 80%,#c5def3 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #c5def3 0%,#ffffff 200px,#ffffff 80%,#c5def3 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #c5def3 0%,#ffffff 200px,#ffffff 80%,#c5def3 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #c5def3 0%,#ffffff 200px,#ffffff 80%,#c5def3 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5def3', endColorstr='#c5def3',GradientType=0 ); /* IE6-9 */
+    background: white;
+    border:1px solid #046a1b;
+    box-shadow: inset 0px 0px 10px 0px #046a1b;
+}
+
+.app-header
+{
+    padding:0 10px;
+}
+
+.app-header-right-book-img,
+.app-header-left-book-img{
+    height:70px;
+    width:100px;
+}
+
+.app-header-right-book-img{
+    display:table-cell;
+    margin-right:20px;
+}
+
+.app-header-left-book-img{
+    display:table-cell;
+    margin-left:20px;
 }
 
 h1
 {
-    border-bottom: 4px solid #09649F;
     margin: 10px 10px 5px 10px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
+.app-header-content{
+    display:table;
+    vertical-align: top;
+    width:100%;
+}
+
+.app-header-border-line{
+    height:3px;
+    width:100%;
+    background: #65bd77;
+    box-shadow: 0 -8px 8px 0 #006316;
+    margin-bottom:5px;
+}
+
 .app-header-home{
-    color: #09649F;
+    display:table-cell;
+    color: #65bd77;
     font-size: 42pt;
-    font-family: "Times New Roman";
     text-decoration: none;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px #0d410d;
+    transition: 0.2s, text-shadow;
+    vertical-align: top;
 }
 
 .app-header-home:hover{
-   text-decoration: underline;
+   text-shadow: 3px 2px 3px black;
 }
 
 #content
@@ -108,20 +134,20 @@ h1
 }
 
 .left-side-panel-content-info-list-item{
-    background: #eeefff;
-    border: 1px solid #a5bde0;
     padding: 20px 5px;
     margin-bottom: 20px;
 }
 
-.left-side-panel-content-info-list-item:first-child{
-    border-top-right-radius: 30px;
+.info-list-item-text{
+    font-size: 25px;
+    font-family: sans-serif;
+    color:#344657;
 }
 
-.info-list-item-text{
-    font-size: 28px;
-    font-family: sans-serif;
-    color:#09649F;
+.info-list-item-img{
+    width:175px;
+    height:125px;
+    margin-top:20px;
 }
 
 .right-side-panel-content
@@ -143,9 +169,11 @@ h1
 .left-side-panel,
 .right-side-panel,
 .app-content{
-    border-top: 1px solid #a5bde0;
-    border-right: 1px solid #a5bde0;
-    border-left: 1px solid #a5bde0;
+    border-top: 1px solid #65bd77;
+    border-right: 1px solid #65bd77;
+    border-left: 1px solid #65bd77;
+    background: #f1f1f1;
+    box-shadow: inset 0px 0px 5px 0px #65bd77;
 }
 
 .app-content-main-page
@@ -162,28 +190,58 @@ h1
 .right-side-panel-time-block
 {
     padding: 10px;
-    border-bottom: 1px solid #9AC6EA;
+    border-bottom: 2px solid #65bd77;
+    font-size:25px;
+    font-family: sans-serif;
+    color: #344657;
 }
 
 .app-footer
 {
-    border-top: 4px solid #09649F;
     text-align: center;
     margin: 6px 0px 0px;
-    padding: 35px 0 15px 0;
+    padding: 15px 10px;
     font-size: 12pt;
-    color: #1368A9;
+    color: #159732;
+}
+
+.app-footer-logo{
+    font-family: sans-serif;
+    font-size: 25px;
+    padding-top: 15px;
+    text-shadow: 1px 1px 1px #546677;
 }
 
 .right-side-panel-list-peoples-ref
 {
-    border-top: 1px solid white;
     padding: 10px;
 }
 
 .right-side-panel-list-peoples-ref a
 {
-    color: #09649F;
+    font-family: sans-serif;
+    color: #344657;
+    font-size:25px;
+}
+
+.student-not-found{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #546677;
+    font-weight: bold;
+}
+
+.student-not-found-email{
+    display: inline-block;
+    padding: 5px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #65bd77;
+    color: #159732;
 }
 
 /*#region student list*/
@@ -198,18 +256,43 @@ h1
 .list-students-item{
     margin:15px 0;
     background: white;
-    color: #121212;
+    font-family: sans-serif;
+    color: #546677;
     padding:10px 15px;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px 1px #454545;
+    box-shadow: 1px 1px 5px 1px #006316;
+    font-weight: bold;
 }
 
 .student-name{
     display:inline-block;
     width:360px;
 }
-/*#endregion student list*/
+
+.student-img{
+    width:25px;
+    height:20px;
+    float:right;
 }
+
+.admin-header{
+    min-height:100px;
+    font-size:25px;
+    text-align: center;
+    padding:20px 50px 10px 50px;
+    margin:0;
+    border-bottom:none;
+    font-weight: normal;
+}
+
+.admin-header-text{
+    padding: 10px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: #344657;
+}
+/*#endregion student list*/
+
 
 .clock {
     padding: 0;
