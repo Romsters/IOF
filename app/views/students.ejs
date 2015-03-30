@@ -1,5 +1,15 @@
 <% layout('layout/layout') %>
 <% block('title', 'Список студентов') %>
 <div class="app-content-student-list">
-    Welcome to student list
+    <ol class="list-students">
+        <% students.forEach(function(student){ %>
+        <li class="list-students-item">
+            <div class="list-student-item-container">
+               <span class="student-name">
+                    <%= student %>
+               </span>
+            </div>
+        </li>
+        <% }) %>
+    </ol>
 </div>

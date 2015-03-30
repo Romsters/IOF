@@ -60,12 +60,12 @@ p
     border-radius: 50px;
     padding: 10px;
     background: #c5def3; /* Old browsers */
-    background: -moz-linear-gradient(top, #c5def3 0%, #ffffff 20%, #ffffff 80%, #c5def3 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c5def3), color-stop(20%,#ffffff), color-stop(80%,#ffffff), color-stop(100%,#c5def3)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #c5def3 0%,#ffffff 20%,#ffffff 80%,#c5def3 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #c5def3 0%,#ffffff 20%,#ffffff 80%,#c5def3 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #c5def3 0%,#ffffff 20%,#ffffff 80%,#c5def3 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #c5def3 0%,#ffffff 20%,#ffffff 80%,#c5def3 100%); /* W3C */
+    background: -moz-linear-gradient(top, #c5def3 0%, #ffffff 200px, #ffffff 80%, #c5def3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c5def3), color-stop(200px,#ffffff), color-stop(80%,#ffffff), color-stop(100%,#c5def3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #c5def3 0%,#ffffff 200px,#ffffff 80%,#c5def3 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #c5def3 0%,#ffffff 200px,#ffffff 80%,#c5def3 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #c5def3 0%,#ffffff 200px,#ffffff 80%,#c5def3 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #c5def3 0%,#ffffff 200px,#ffffff 80%,#c5def3 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5def3', endColorstr='#c5def3',GradientType=0 ); /* IE6-9 */
 }
 
@@ -74,10 +74,18 @@ h1
     border-bottom: 4px solid #09649F;
     margin: 10px 10px 5px 10px;
     padding-bottom: 30px;
+    text-align: center;
+}
+
+.app-header-home{
     color: #09649F;
     font-size: 42pt;
     font-family: "Times New Roman";
-    text-align: center;
+    text-decoration: none;
+}
+
+.app-header-home:hover{
+   text-decoration: underline;
 }
 
 #content
@@ -88,18 +96,41 @@ h1
 .left-side-panel-content
 {
     margin: 0;
-    color: #09649F;
     padding: 10px;
     text-align: center;
-    font-size: 40pt;
     padding: 10px;
+}
+
+.left-side-panel-content-info-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.left-side-panel-content-info-list-item{
+    background: #eeefff;
+    border: 1px solid #a5bde0;
+    padding: 20px 5px;
+    margin-bottom: 20px;
+}
+
+.left-side-panel-content-info-list-item:first-child{
+    border-top-right-radius: 30px;
+}
+
+.info-list-item-text{
+    font-size: 28px;
+    font-family: sans-serif;
+    color:#09649F;
 }
 
 .right-side-panel-content
 {
     color: #09649F;
-    font-size: 30px;
+    font-family: sans-serif;
+    font-size: 28px;
     text-align: center;
+    padding:20px 5px;
 }
 
 .app-content
@@ -107,6 +138,14 @@ h1
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     text-align: justify;
+}
+
+.left-side-panel,
+.right-side-panel,
+.app-content{
+    border-top: 1px solid #a5bde0;
+    border-right: 1px solid #a5bde0;
+    border-left: 1px solid #a5bde0;
 }
 
 .app-content-main-page
@@ -146,3 +185,27 @@ h1
 {
     color: #09649F;
 }
+
+/*#region student list*/
+.list-students{
+    padding:0;
+    margin:0;
+    padding:20px;
+    padding-left:60px;
+    font-size:16px;
+}
+
+.list-students-item{
+    margin:15px 0;
+    background: white;
+    color: #121212;
+    padding:10px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #454545;
+}
+
+.student-name{
+    display:inline-block;
+    width:360px;
+}
+/*#endregion student list*/

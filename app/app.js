@@ -60,7 +60,6 @@ app.post('/admin/deleteStudent', auth, function(req, resp, next){
 
     var tempStudentCollection = studentCollection.slice();
     tempStudentCollection.splice(tempStudentCollection.indexOf(student), 1);
-    tempStudentCollection = sort(tempStudentCollection);
     fs.writeFile('app/students.json', JSON.stringify(tempStudentCollection), function (err) {
         if (err){
             next(err);
