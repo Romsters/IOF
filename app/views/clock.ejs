@@ -1,5 +1,10 @@
 <% layout('layout/layout') %>
-<% block('title', 'Часы') %>
-<div class="app-content-clock-page">
-Welcome To Clock
+<% block('title', 'Годинник') %>
+<div class="app-content-clock-page" id="clock">
+    <ul class="clock" id="clock">
+        <li class="sec" id="sec"></li>
+        <li class="hour" id="hour"></li>
+        <li class="min" id="min"></li>
+    </ul>
 </div>
+<script type="text/javascript" src="/javascripts/clock.js"></script>

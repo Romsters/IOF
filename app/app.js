@@ -78,8 +78,23 @@ app.get('/admin', auth, function(req, resp, next){
     });
 });
 
-app.get('/clock', function(req, resp, next){
-   resp.render('clock');
+app.get('/serverTime', function(req, resp, next){
+    var date=new Date();
+    var res=date.getTime().toString();
+    resp.end(res);
+});
+
+app.post('/admin', function(req, resp, next){
+    if(req.body.login == 'ztu_admin_iof' && req.body.password == 'ztuiofadminsecret'){
+        fs.readFile('app/students.json', 'utf-8', function (err, fileContents) {
+            if (err) next(err);
+            resp.render('admin-content', {
+                students: JSON.parse(fileContents)
+            });
+        });
+        return;
+    }
+    next(new Error());
 });
 
 app.get('/students', function(req, resp, next){
