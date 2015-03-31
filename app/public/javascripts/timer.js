@@ -8,23 +8,38 @@ $(document).on('ready',function() {
         dataType: "json"
     }).success(function (data) {
         sTime = new Date(parseInt(data));
-            olimpTime=new Date();
-            olimpTime.setDate(9);
+            var olimpTime=new Date();
             olimpTime.setFullYear(2015);
-            olimpTime.setHours(10);
-            olimpTime.getMinutes(0);
-            olimpTime.getSeconds(0);
+            olimpTime.setDate(9);
             olimpTime.setMonth(3);
+            olimpTime.setHours(10);
+            olimpTime.setMinutes(0);
+            olimpTime.setSeconds(0);
             var res=olimpTime.getTime()-sTime.getTime();
-            console.log(res);
-            res=Math.ceil(res/10);
+            res=Math.ceil(res/1000);
 
         if(res>0)
         {
-            $("#timerDays").text((Math.ceil(res/(60*60*24))).toString());
-            $("#timerHours").text((Math.ceil(res/(60*60))%24).toString());
-            $("#timerMinutes").text(((Math.ceil(res/(60)))%60).toString());
-            $("#timerSeconds").text((res%60).toString());
+            var time=Math.ceil(res/(60*60*24));
+            $("#timerDays").text(time.toString());
+
+            time=Math.ceil(res/(60*60))%24;
+            if(time>9)
+                $("#timerHours").text(time.toString());
+            else
+                $("#timerHours").text('0'+time.toString());
+
+            time=(Math.ceil(res/(60)))%60;
+            if(time>9)
+                $("#timerMinutes").text(time.toString());
+            else
+                $("#timerMinutes").text('0'+time.toString());
+
+            time=res%60;
+            if(time>9)
+                $("#timerSeconds").text((res%60).toString());
+            else
+                $("#timerSeconds").text('0'+time.toString());
             interval=setInterval(function(){
                 res--;
                 if(!res)
@@ -33,10 +48,26 @@ $(document).on('ready',function() {
                     clearInterval(interval);
                     return;
                 }
-                $("#timerDays").text((Math.ceil(res/(60*60*24))).toString());
-                $("#timerHours").text((Math.ceil(res/(60*60))%24).toString());
-                $("#timerMinutes").text(((Math.ceil(res/(60)))%60).toString());
-                $("#timerSeconds").text((res%60).toString());
+                var time=Math.ceil(res/(60*60*24));
+                $("#timerDays").text(time.toString());
+
+                time=Math.ceil(res/(60*60))%24;
+                if(time>9)
+                    $("#timerHours").text(time.toString());
+                else
+                    $("#timerHours").text('0'+time.toString());
+
+                time=(Math.ceil(res/(60)))%60;
+                if(time>9)
+                    $("#timerMinutes").text(time.toString());
+                else
+                    $("#timerMinutes").text('0'+time.toString());
+
+                time=res%60;
+                if(time>9)
+                    $("#timerSeconds").text((res%60).toString());
+                else
+                    $("#timerSeconds").text('0'+time.toString());
             },1000);
         }
         else
