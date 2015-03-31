@@ -72,6 +72,10 @@ app.post('/admin/deleteStudent', auth, function(req, resp, next){
     });
 });
 
+app.get('/clock', auth, function(req, resp, next){
+    resp.render('clock');
+});
+
 app.get('/admin', auth, function(req, resp, next){
     resp.render('admin-content', {
         students: studentCollection
@@ -80,6 +84,7 @@ app.get('/admin', auth, function(req, resp, next){
 
 app.get('/serverTime', function(req, resp, next){
     var date = new Date();
+    console.log(date);
     var res = date.getTime().toString();
     resp.end(res);
 });

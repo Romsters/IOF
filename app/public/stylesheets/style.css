@@ -43,9 +43,38 @@ body
     padding: 20px;
     background: linear-gradient(to bottom, #2da046 0%,#ffffff 200px,#ffffff 80%,#2da046 100%);
 }
-p
+p, .competition-events
 {
-    margin: 0;
+    font-family: sans-serif;
+    color: #344657;
+    font-size:18px;
+    padding: 0 20px;
+    line-height: 25px;
+}
+
+p.header{
+    text-align: center;
+    font-size:25px;
+    padding:10px;
+}
+
+.competition-events{
+    padding-left:50px;
+}
+
+.href-to-clock
+{
+    color:#344657;
+    text-decoration: none;
+}
+
+.href-to-clock-time{
+    text-decoration: underline;
+    color: #159732;
+}
+
+.mailto{
+    color:#046a1b;
 }
 
 .app
@@ -178,7 +207,7 @@ h1
 
 .app-content-main-page
 {
-    padding: 15px;
+    padding: 25px 15px;
     font-size: 12pt;
 }
 
@@ -325,4 +354,10 @@ h1
 .hour {
     background: url(/images/hourhand.png);
     z-index: 1;
+}
+
+/*index*/
+.abz{
+    width:40px;
+    display:inline-block;
 }
